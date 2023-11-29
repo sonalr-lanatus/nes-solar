@@ -177,17 +177,17 @@
   }
 }
 .slide {
-  height: 390px;
+  height: 70%;
   overflow: hidden;
   position: relative;
-  background-color: #000;
+  background-color: "#000";
 }
 .slide > div {
   width: 100%;
   height: 100%;
   background-size: cover;
   position: absolute;
-  animation: slide 25s infinite;
+  animation: slide 20s infinite;
   opacity: 0;
 }
 .slide > div:nth-child(2) {

@@ -11,9 +11,19 @@ const Item = styled("div")(({ theme }) => ({
   borderColor: theme.palette.mode === "dark" ? "#444d58" : "#ced7e0",
   padding: theme.spacing(1),
   borderRadius: "4px",
-  textAlign: "center",
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
   width: 200,
   height: 100,
+  fontWeight: 400,
+  fontSize: "16px",
+  "&:hover": {
+    fontWeight: 600,
+    border: "1px solid #203F69",
+    color: "#203F69",
+    boxShadow: "0 20px 40px 0 rgba(0,0,0,.1)",
+  },
 }));
 function Hero() {
   return (
@@ -38,27 +48,24 @@ function Hero() {
             alignItems="center"
             justifyContent="center"
           >
-            <Grid xs={4}>
-              <Item></Item>
+            <Grid xs={2}>
+              <Item>Residence Solar</Item>
             </Grid>
-            <Grid xs={4}>
-              <Item></Item>
+            <Grid xs={2.3}>
+              <Item>Non-Residence Solar</Item>
             </Grid>
-            <Grid xs={4}>
-              <Item></Item>
+            <Grid xs={2.3}>
+              <Item>Repair</Item>
             </Grid>
-            <Grid xs={4}>
-              <Item></Item>
+            <Grid xs={2.3}>
+              <Item>O & M</Item>
             </Grid>
-            <Grid xs={4}>
-              <Item></Item>
-            </Grid>
-            <Grid xs={4}>
-              <Item></Item>
+            <Grid xs={2}>
+              <Item>Wind Solar Hybrid</Item>
             </Grid>
           </Grid>
         </Box>
-        <div className="absolute top-20 left-0 h-[95vh] w-screen">
+        <div className="absolute top-20 left-0 h-[95vh] w-full">
           <div className="slide">
             <div
               style={{ backgroundImage: "url(/assets/New1.png)" }}

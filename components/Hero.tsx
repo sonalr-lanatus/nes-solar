@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import { Box } from "@mui/system";
 import Grid from "@mui/system/Unstable_Grid/Grid";
 import styled from "@mui/system/styled";
@@ -30,13 +30,41 @@ const Item = styled("div")(({ theme }) => ({
     boxShadow: "0 20px 40px 0 rgba(0,0,0,.1)",
   },
 }));
+
+const TILES = [
+  "Residence Solar",
+  "Non-Residence Solar",
+  "Wind Solar Hybrid",
+  "Cleaning System",
+  "O & M",
+];
+
 function Hero() {
   const [open, setOpen] = useState(false);
   const [formTitle, setFormTitle] = useState();
+  const [tiles, setTiles] = useState(
+    TILES.map((tile) => ({ label: tile, hidden: false }))
+  );
   const toggleDrawer = (open: any, event: any) => {
-    setFormTitle(event.target.outerText);
+    const interactedTile = event.target.outerText;
+    setFormTitle(interactedTile);
+    setTiles((prev: any) =>
+      prev.map((tile: any) => {
+        if (tile.label !== interactedTile) {
+          return { ...tile, hidden: true };
+        } else {
+          return tile;
+        }
+      })
+    );
     setOpen(open);
   };
+
+  useEffect(() => {
+    !open &&
+      setTiles((prev) => prev.map((tile) => ({ ...tile, hidden: open })));
+  }, [open]);
+
   return (
     <>
       <div className="flex flex-col py-16 lg:h-[65vh] lg:justify-end lg:pb-12 ">
@@ -51,10 +79,10 @@ function Hero() {
             </div>
 
             <div
-              className="before:border-l-4 before:border-white before:border-solid before:rounded-md   items-center border-x-white border-white border-2 border-solid rounded-md border-t-0 flex min-w-190 relative pt-1 pr-4 pl-4 pb-1.5 mt-0 mb-0 mr-4 ml-1"
+              className="before:border-l-2 before:absolute before:h-2 before:w-4 before:top-0 before:border-t-2 before:border-solid before:rounded-t before:border-white before:-left-0.5 items-center border-x-white border-white border-2 border-solid rounded-md border-t-0 flex min-w-190 relative pt-1 pr-4 pl-4 pb-1.5 mt-0 mb-0 mr-4 ml-1 after:border-r-2 "
               style={{ width: "190px", height: "46px" }}
             >
-              <div className="text-white before:mr-2.5  items-center  flex text-lg  left-1 absolute right-1 -top-3.5   after:ml-3 ">
+              <div className="text-white before:mr-2.5 before:border-white before:h-0.5 before:w-3  items-center  flex text-sm  left-1 absolute right-1 -top-2.5   after:ml-3 after:w-full after:h-0.5 after:bg-white">
                 Action
               </div>
 
@@ -84,61 +112,23 @@ function Hero() {
             alignItems="center"
             justifyContent="center"
           >
-            <Grid xs={2}>
-              <Tooltip title="Click & Enquire now">
-                <Item
-                  onClick={(e) => {
-                    toggleDrawer(true, e);
-                  }}
-                >
-                  Residence Solar
-                </Item>
-              </Tooltip>
-            </Grid>
-            <Grid xs={1.5}>
-              <Tooltip title="Click & Enquire now">
-                <Item
-                  onClick={(e) => {
-                    toggleDrawer(true, e);
-                  }}
-                >
-                  Non-Residence Solar
-                </Item>
-              </Tooltip>
-            </Grid>
-            <Grid xs={2}>
-              <Tooltip title="Click & Enquire now">
-                <Item
-                  onClick={(e) => {
-                    toggleDrawer(true, e);
-                  }}
-                >
-                  Wind Solar Hybrid
-                </Item>
-              </Tooltip>
-            </Grid>
-            <Grid xs={1.5}>
-              <Tooltip title="Click & Enquire now">
-                <Item
-                  onClick={(e) => {
-                    toggleDrawer(true, e);
-                  }}
-                >
-                  Repair
-                </Item>
-              </Tooltip>
-            </Grid>
-            <Grid xs={2}>
-              <Tooltip title="Click & Enquire now">
-                <Item
-                  onClick={(e) => {
-                    toggleDrawer(true, e);
-                  }}
-                >
-                  O & M
-                </Item>
-              </Tooltip>
-            </Grid>
+            {tiles.map((tile) => (
+              <Grid
+                xs={2}
+                key={tile.label}
+                sx={{ visibility: tile.hidden ? "hidden" : "visible" }}
+              >
+                <Tooltip title="Click & Enquire now">
+                  <Item
+                    onClick={(e) => {
+                      toggleDrawer(true, e);
+                    }}
+                  >
+                    {tile.label}
+                  </Item>
+                </Tooltip>
+              </Grid>
+            ))}
           </Grid>
         </Box>
         <div className="absolute top-20 left-0 h-[95vh] w-full">

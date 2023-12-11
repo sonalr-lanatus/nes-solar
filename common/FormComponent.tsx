@@ -25,11 +25,11 @@ export default function FormComponent({ title, setOpen }: any) {
             marginTop: "80px",
             color: "#203F69",
             boxShadow: "0 5px 50px rgb(0 0 0 / 10%)",
-            height: "100%",
+            height: "50%",
             borderRadius: "20px",
           }}
         >
-          <Grid container sx={{ padding: "34px" }}>
+          <Grid container sx={{ padding: "24px" }}>
             <Grid
               item
               xs={12}
@@ -39,7 +39,7 @@ export default function FormComponent({ title, setOpen }: any) {
                 justifyContent: "space-between",
               }}
             >
-              <Typography variant="h6">{title}</Typography>
+              <Typography variant="h6"></Typography>
               <IconButton
                 aria-label="close"
                 onClick={handleClose}
@@ -55,6 +55,16 @@ export default function FormComponent({ title, setOpen }: any) {
               <Grid item xs={12} sx={{ display: "flex", alignItems: "center" }}>
                 <InputLabel sx={{ fontSize: "0.9rem", color: "black" }}>
                   Name
+                </InputLabel>
+              </Grid>
+              <Grid item xs={12} sx={{ alignItems: "center" }}>
+                <TextField variant="outlined" />
+              </Grid>
+            </Grid>
+            <Grid item xs={3}>
+              <Grid item xs={12} sx={{ display: "flex", alignItems: "center" }}>
+                <InputLabel sx={{ fontSize: "0.9rem", color: "black" }}>
+                  Address
                 </InputLabel>
               </Grid>
               <Grid item xs={12} sx={{ alignItems: "center" }}>
@@ -81,27 +91,18 @@ export default function FormComponent({ title, setOpen }: any) {
                 <TextField variant="outlined" />
               </Grid>
             </Grid>
-            <Grid item xs={3}>
+
+            <Grid item xs={3} mt={2}>
               <Grid item xs={12} sx={{ display: "flex", alignItems: "center" }}>
                 <InputLabel sx={{ fontSize: "0.9rem", color: "black" }}>
-                  Avg Monthly Electricity
+                  Attach Electricity Bill
                 </InputLabel>
               </Grid>
               <Grid item xs={12} sx={{ alignItems: "center" }}>
                 <TextField variant="outlined" />
               </Grid>
             </Grid>
-            <Grid item xs={3}>
-              <Grid item xs={12} sx={{ display: "flex", alignItems: "center" }}>
-                <InputLabel sx={{ fontSize: "0.9rem", color: "black" }}>
-                  6 digit pin code
-                </InputLabel>
-              </Grid>
-              <Grid item xs={12} sx={{ alignItems: "center" }}>
-                <TextField variant="outlined" />
-              </Grid>
-            </Grid>
-            <Grid item xs={3} mt={3}>
+            <Grid item xs={3} mt={4}>
               <Grid item xs={12} sx={{ alignItems: "center" }}>
                 <Button
                   variant="contained"

@@ -3,9 +3,8 @@ import React, { useEffect, useMemo, useState } from "react";
 import { Box } from "@mui/system";
 import Grid from "@mui/system/Unstable_Grid/Grid";
 import styled from "@mui/system/styled";
-import DrawerComponent from "@/common/DrawerComponent";
-import FormComponent from "@/common/FormComponent";
 import { Tooltip } from "@mui/material";
+import EnquireFormComponent from "@/common/EnquireFormComponent";
 
 const Item = styled("div")(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
@@ -164,7 +163,7 @@ function Hero() {
           </div>
         </div>
       </div>
-      {open ? <FormComponent title={formTitle} setOpen={setOpen} /> : ""}
+      {open ? <EnquireFormComponent title={formTitle} setOpen={setOpen} /> : ""}
     </>
   );
 }

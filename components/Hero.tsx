@@ -68,7 +68,7 @@ function Hero() {
     <>
       <div className="flex flex-col py-16 lg:h-[65vh] lg:justify-end lg:pb-12 ">
         <div className="items-center text-center flex flex-col h-full justify-center w-full z-10 relative ">
-          <h1 className="text-white font-medium mt-0 mr-0 mb-10 text-center font-serif text-4xl leading-5">
+          <h1 className="text-white font-medium mt-0 mr-0 mb-10 text-center font-serif text-4xl leading-5 md:leading-10 sm:leading-10">
             One Stop Solutions for Design,Execution and O&M
           </h1>
 
@@ -81,11 +81,11 @@ function Hero() {
               className="before:border-l-2 before:absolute before:h-2 before:w-4 before:top-0 before:border-t-2 before:border-solid before:rounded-t before:border-white before:-left-0.5 items-center border-x-white border-white border-2 border-solid rounded-md border-t-0 flex min-w-190 relative pt-1 pr-4 pl-4 pb-1.5 mt-0 mb-0 mr-4 ml-1 after:border-r-2 "
               style={{ width: "190px", height: "46px" }}
             >
-              <div className="text-white before:mr-2.5 before:border-white before:h-0.5 before:w-3  items-center  flex text-sm  left-1 absolute right-1 -top-2.5   after:ml-3 after:w-full after:h-0.5 after:bg-white">
+              <div className="text-white before:mr-2.5 before:border-white before:h-0.5 before:w-3  items-center  flex text-sm  left-1 absolute right-0.5 -top-2.5 after:ml-3 after:w-full after:h-0.5 after:bg-white">
                 Action
               </div>
 
-              <div className="typewriter   text-yellow-400 text-lg font-medium max-w-full pr-2"></div>
+              <div className="typewriter  text-yellow-400 text-lg font-medium max-w-full pr-2"></div>
             </div>
 
             <div className=" text-white text-lg">
@@ -113,7 +113,7 @@ function Hero() {
           >
             {tiles.map((tile) => (
               <Grid
-                xs={2}
+                xs={2.4}
                 key={tile.label}
                 sx={{ visibility: tile.hidden ? "hidden" : "visible" }}
               >
@@ -130,7 +130,7 @@ function Hero() {
             ))}
           </Grid>
         </Box>
-        <div className="absolute top-20 left-0 h-[95vh] w-full">
+        <div className="absolute top-20 left-0 h-[95vh] w-full md:h-50vh">
           <div className="slide">
             <div
               style={{ backgroundImage: "url(/assets/New1.png)" }}

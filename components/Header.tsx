@@ -8,6 +8,7 @@ import Divider from "@mui/material/Divider";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemText from "@mui/material/ListItemText";
 import Box from "@mui/material/Box";
+import Link from "next/link";
 
 function Header() {
   const [open, setOpen] = useState(false);
@@ -64,18 +65,32 @@ function Header() {
 
               <Divider sx={{ mb: 2 }} />
 
-              <Box sx={{ mb: 2 }}>
+              <Box sx={{ mb: 2, color: "#203F69" }}>
                 <ListItemButton>
-                  <ListItemText primary="About Us" />
+                  <Link href="/About">
+                    <ListItemText
+                      sx={{ fontWeight: "500" }}
+                      primary="About Us"
+                    />
+                  </Link>
                 </ListItemButton>
                 <ListItemButton>
-                  <ListItemText primary="Our Expertise" />
+                  <ListItemText
+                    sx={{ fontWeight: "500" }}
+                    primary="Our Expertise"
+                  />
                 </ListItemButton>
                 <ListItemButton>
-                  <ListItemText primary="What we offer" />
+                  <ListItemText
+                    sx={{ fontWeight: "500" }}
+                    primary="What we offer"
+                  />
                 </ListItemButton>
                 <ListItemButton>
-                  <ListItemText primary="Contact us" />
+                  <ListItemText
+                    sx={{ fontWeight: "500" }}
+                    primary="Contact us"
+                  />
                 </ListItemButton>
               </Box>
             </Box>

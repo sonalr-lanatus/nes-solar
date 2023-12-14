@@ -3,34 +3,34 @@ import React from "react";
 export default function Footer() {
   return (
     <>
-      <footer className="bg-white">
-        <div className="mx-auto max-w-screen-xl px-4 pb-6 pt-16 sm:px-6 lg:px-8 lg:pt-24">
+      <footer className=" bg-[#10213e]">
+        <div className="mx-auto max-w-screen-xl px-4 pb-3 pt-16 sm:px-6 lg:px-8 lg:pt-8">
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
             <div>
               <div className="flex justify-center text-teal-600 sm:justify-start">
                 {" "}
                 <img
-                  src="../assets/nes-solar-header-logo-35420220703.png"
+                  src="../assets/nes-solar.png"
                   className="w-36"
                   alt="solar logo"
                 />
               </div>
 
-              <p className="mt-6 max-w-md text-center leading-relaxed text-gray-500 sm:max-w-xs sm:text-left">
+              <p className="mt-6 max-w-md text-center leading-relaxed font-white sm:max-w-xs sm:text-left">
                 10+ Years of Experience-Trust
               </p>
               <ul className="mt-8 flex justify-between gap-7 sm:justify-start md:gap-5">
-                <li className="w-10 h-10 text-[#203F69] border-solid border-2 border-[#203F69] rounded-full flex justify-center items-center font-bold transition-all delay-0.3 hover:bg-[#203F69] hover:cursor-pointer hover:text-white">
+                <li className="w-10 h-10 font-white border-solid border-2 Border-white rounded-full flex justify-center items-center font-bold transition-all delay-0.3 hover:bg-white hover:cursor-pointer hover:text-[#203F69]">
                   <i className="fa-brands fa-facebook-f text-xl"></i>
                 </li>
-                <li className="w-10 h-10 text-[#203F69] border-solid border-2 border-[#203F69] rounded-full flex justify-center items-center font-bold transition-all delay-0.3 hover:bg-[#203F69] hover:cursor-pointer hover:text-white">
+                <li className="w-10 h-10 font-white border-solid border-2 Border-white rounded-full flex justify-center items-center font-bold transition-all delay-0.3 hover:bg-white hover:cursor-pointer hover:text-[#203F69]">
                   <i className="fa-brands fa-twitter text-xl"></i>
                 </li>
-                <li className="w-10 h-10 text-[#203F69] border-solid border-2 border-[#203F69] rounded-full flex justify-center items-center font-bold transition-all delay-0.3 hover:bg-[#203F69] hover:cursor-pointer hover:text-white">
+                <li className="w-10 h-10 font-white border-solid border-2 Border-white rounded-full flex justify-center items-center font-bold transition-all delay-0.3 hover:bg-white hover:cursor-pointer hover:text-[#203F69]">
                   <i className="fa-brands fa-instagram text-xl"></i>
                 </li>
 
-                <li className="w-10 h-10 text-[#203F69] border-solid border-2 border-[#203F69] rounded-full flex justify-center items-center font-bold transition-all delay-0.3 hover:bg-[#203F69] hover:cursor-pointer hover:text-white">
+                <li className="w-10 h-10 font-white border-solid border-2 Border-white rounded-full flex justify-center items-center font-bold transition-all delay-0.3 hover:bg-white hover:cursor-pointer hover:text-[#203F69]">
                   <i className="fa-brands fa-whatsapp text-xl"></i>
                 </li>
               </ul>
@@ -150,12 +150,12 @@ export default function Footer() {
 
             <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:col-span-2">
               <div className="text-center sm:text-left">
-                <p className="text-lg font-bold text-gray-900">Expertise</p>
+                <p className="text-lg font-bold font-white">Expertise</p>
 
-                <ul className="mt-8 space-y-4 text-sm">
+                <ul className="mt-4 space-y-2 text-sm">
                   <li>
                     <a
-                      className="text-gray-700 transition hover:text-gray-700/75"
+                      className="font-white transition hover:text-gray-700/75"
                       href="/"
                     >
                       Solar EPC
@@ -164,7 +164,7 @@ export default function Footer() {
 
                   <li>
                     <a
-                      className="text-gray-700 transition hover:text-gray-700/75"
+                      className="font-white transition hover:text-gray-700/75"
                       href="/"
                     >
                       Project Finance
@@ -173,7 +173,7 @@ export default function Footer() {
 
                   <li>
                     <a
-                      className="text-gray-700 transition hover:text-gray-700/75"
+                      className="font-white transition hover:text-gray-700/75"
                       href="/"
                     >
                       Solar O&M
@@ -230,12 +230,12 @@ export default function Footer() {
               </div> */}
 
               <div className="text-center sm:text-left">
-                <p className="text-lg font-bold text-gray-900">Useful Links</p>
+                <p className="text-lg font-bold font-white">Useful Links</p>
 
-                <ul className="mt-8 space-y-4 text-sm">
+                <ul className="mt-4 space-y-2 text-sm">
                   <li>
                     <a
-                      className="text-gray-700 transition hover:text-gray-700/75"
+                      className="font-white transition hover:text-gray-700/75"
                       href="/"
                     >
                       Why Us
@@ -244,7 +244,7 @@ export default function Footer() {
 
                   <li>
                     <a
-                      className="text-gray-700 transition hover:text-gray-700/75"
+                      className="font-white transition hover:text-gray-700/75"
                       href="/"
                     >
                       Team
@@ -252,7 +252,7 @@ export default function Footer() {
                   </li>
                   <li>
                     <a
-                      className="text-gray-700 transition hover:text-gray-700/75"
+                      className="font-white transition hover:text-gray-700/75"
                       href="/"
                     >
                       Projects
@@ -260,7 +260,7 @@ export default function Footer() {
                   </li>
                   <li>
                     <a
-                      className="text-gray-700 transition hover:text-gray-700/75"
+                      className="font-white transition hover:text-gray-700/75"
                       href="/"
                     >
                       Awards
@@ -270,17 +270,17 @@ export default function Footer() {
               </div>
 
               <div className="text-center sm:text-left">
-                <p className="text-lg font-bold text-gray-900">Contact Us</p>
+                <p className="text-lg font-bold font-white">Contact Us</p>
 
-                <ul className="mt-8 space-y-4 text-sm">
+                <ul className="mt-4 space-y-2 text-sm">
                   <li>
                     <a
-                      className="flex items-center justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
+                      className="flex items-start justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
                       href="mailto:sales@nessolar.in"
                     >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        className="h-5 w-5 shrink-0 text-gray-900"
+                        className="h-5 w-5 shrink-0 font-white"
                         fill="none"
                         viewBox="0 0 24 24"
                         stroke="currentColor"
@@ -293,7 +293,7 @@ export default function Footer() {
                         />
                       </svg>
 
-                      <span className="flex-1 text-gray-700">
+                      <span className="flex-1 font-white">
                         sales@nessolar.in
                       </span>
                     </a>
@@ -301,12 +301,12 @@ export default function Footer() {
 
                   <li>
                     <a
-                      className="flex items-center justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
+                      className="flex items-start justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
                       href="tel:9825071551"
                     >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        className="h-5 w-5 shrink-0 text-gray-900"
+                        className="h-5 w-5 shrink-0 font-white"
                         fill="none"
                         viewBox="0 0 24 24"
                         stroke="currentColor"
@@ -319,20 +319,18 @@ export default function Footer() {
                         />
                       </svg>
 
-                      <span className="flex-1 text-gray-700">
-                        +91 9825071551
-                      </span>
+                      <span className="flex-1 font-white">+91 9825071551</span>
                     </a>
                   </li>
 
                   <li className="flex items-start justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end">
                     <a
                       href="https://www.google.com/maps/place/NES+Energy+Solutions/@23.0600407,72.5629188,136m/data=!3m1!1e3!4m5!3m4!1s0x395e851b56d1b85b:0x8dd658ce33cee08b!8m2!3d23.0602187!4d72.5628688"
-                      className="flex items-center justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
+                      className="flex items-start justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
                     >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        className="h-5 w-5 shrink-0 text-gray-900"
+                        className="h-5 w-5 shrink-0 font-white"
                         fill="none"
                         viewBox="0 0 24 24"
                         stroke="currentColor"
@@ -350,7 +348,7 @@ export default function Footer() {
                         />
                       </svg>
 
-                      <address className="-mt-0.5 flex-1 not-italic text-gray-700">
+                      <address className="-mt-0.5 flex-1 not-italic font-white text-justify">
                         1/A Shambhupark Society , Nr. Vijayanagar School Rly.
                         Crossing Kiranpark, Nava Vadaj, Ahmedabad , 380013
                       </address>
@@ -361,9 +359,9 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="mt-12 border-t border-gray-100 pt-6">
+          <div className="mt-4 border-t border-gray-100 pt-2">
             <div className="text-center sm:flex sm:justify-center sm:text-left]">
-              <p className="mt-4 text-sm text-black-500 sm:order-first sm:mt-0">
+              <p className="mt-4 text-sm font-white sm:order-first sm:mt-0">
                 &copy; 2022 - 2023 All Rights Reserved by NES Energy Solutions.
               </p>
             </div>

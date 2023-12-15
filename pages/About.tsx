@@ -88,51 +88,392 @@ export default function About() {
           </div>
         </div>
       </section>
-      {/* <section className="whowe-are-area">
-        <div className="container">
-          <div className="row">
-            <div className="col-xl-4 col-lg-4 col-md-12 col-sm-12">
-              <div className="single-whowe-are-box text-center">
-                <div className="icon">
-                  <span className="icon-career"></span>
+      <section className="relative block py-24 px-0  ">
+        <div className="container pr-4 pl-4 mr-auto ml-auto md:max-w-7xl ">
+          <div className="flex flex-wrap -mr-4 -ml-4 justify-center">
+            <div className="relative w-full pr-4 pl-4 md:basis-full md:max-w-sm xl:basis-1/3 xl:max-w-sm lg:basis-1/3 lg:max-w-sm sm:basis-full sm:max-w-sm ">
+              <div className="relative block py-0 px-8 mb-10 text-center">
+                <div className="relative block">
+                  <img
+                    src="../assets/mission.png"
+                    className="h-24 w-24 m-auto transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 hover:duration-300"
+                  />
+                  <span className="font-normal transform-none antialiased before:text-[#002f63] text-7xl leading-10 "></span>
                 </div>
-                <div className="text">
-                  <h3>Mission</h3>
-                  <p>
+                <div className="relative block ">
+                  <h3 className="mt-6 mb-4 mx-0 text-xl text-[#002f63] font-bold">
+                    Mission
+                  </h3>
+                  <p className="m-0 text-black">
                     We take pride in delivering reliable, efficient and cost
                     effective solar solutions with agility.
                   </p>
                 </div>
               </div>
             </div>
-            <div className="col-xl-4 col-lg-4 col-md-12 col-sm-12">
-              <div className="single-whowe-are-box text-center">
-                <div className="icon">
-                  <span className="icon-null-2"></span>
+            <div className="relative w-full pr-4 pl-4 md:basis-full md:max-w-sm xl:basis-1/3 xl:max-w-sm lg:basis-1/3 lg:max-w-sm sm:basis-full sm:max-w-sm ">
+              <div className="relative block py-0 px-8 mb-10 text-center">
+                <div className="relative block">
+                  <img
+                    src="../assets/vision.png"
+                    className="h-24 w-24 m-auto transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 hover:duration-300"
+                  />
+                  <span className="font-normal transform-none antialiased before:text-[#002f63] text-7xl leading-10"></span>
                 </div>
-                <div className="text">
-                  <h3>Vision</h3>
-                  <p>
+                <div className="relative block ">
+                  <h3 className="mt-6 mb-4 mx-0 text-xl text-[#002f63] font-bold">
+                    Vision
+                  </h3>
+                  <p className="m-0 text-black">
                     To be the preferred destination for comprehensive solar
                     power plant solutions at large scale.
                   </p>
                 </div>
               </div>
             </div>
-            <div className="col-xl-4 col-lg-4 col-md-12 col-sm-12">
-              <div className="single-whowe-are-box text-center">
-                <div className="icon">
-                  <span className="icon-null-3"></span>
+            <div className="relative w-full pr-4 pl-4 md:basis-full md:max-w-sm xl:basis-1/3 xl:max-w-sm lg:basis-1/3 lg:max-w-sm sm:basis-full sm:max-w-sm">
+              <div className="relative block py-0 px-8 mb-10 text-center">
+                <div className="relative block ">
+                  <img
+                    src="../assets/work.png"
+                    className="h-24 w-24 m-auto transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 hover:duration-300"
+                  />
+                  <span className="font-normal transform-none antialiased before:text-[#002f63] text-7xl leading-10"></span>
                 </div>
-                <div className="text">
-                  <h3>Core Value</h3>
-                  <p>Committed to highest customer satisfaction.</p>
+                <div className="relative block ">
+                  <h3 className="mt-6 mb-4 mx-0 text-xl text-[#002f63] font-bold">
+                    Core Value
+                  </h3>
+                  <p className="m-0 text-black">
+                    Committed to highest customer satisfaction.
+                  </p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section> */}
+      </section>
+      <section
+        className="relative block pt-28 pb-24 px-0"
+        style={{ background: "#002f630a" }}
+      >
+        <div className="container pr-4 pl-4 mr-auto ml-auto md:max-w-7xl">
+          <div className="flex flex-wrap -mr-4 -ml-4 justify-center">
+            <div className="relative w-full pr-4 pl-4">
+              <div className="relative block">
+                <div className="pb-9 relative block -mt-1 text-center">
+                  <p
+                    style={{ color: "#333" }}
+                    className="text-sm leading-5 font-bold uppercase mx-0 mb-3 mt-0"
+                  >
+                    Offering
+                  </p>
+                  <div
+                    style={{ color: "#333" }}
+                    className="relative block text-[#002f63] text-5xl leading-10 font-bold capitalize z-10 mb-5 mx-0 mt-0"
+                  >
+                    What We Offer
+                    <p className="fa_tt_span">
+                      <span></span>
+                      <span></span>
+                    </p>
+                  </div>
+                  <div className="relative block w-20 h-2"></div>
+                </div>
+              </div>
+            </div>
+            <div className="relative w-full pr-4 pl-4">
+              <div className="relative block">
+                <div className="flex flex-wrap -mr-4 -ml-4">
+                  <div className="relative w-full pr-4 pl-4 mt-3 xl:basis-1/2 xl:max-w-xl">
+                    <div className="relative flex flex-col min-w-0 break-words bg-white border-solid border-2 border-slate-400 mb-3 rounded bg-clip-border">
+                      <div className="flex flex-nowrap">
+                        <div
+                          className="relative"
+                          style={{
+                            textAlign: "center",
+                            margin: "auto",
+                            display: "block",
+                          }}
+                        >
+                          <img
+                            src="https://nessolar.in/uploads/what-we-offer/what-we-offer-70520220620.png"
+                            className="rounded-sm p-2"
+                            alt="Quality"
+                            style={{ width: "64px" }}
+                          />
+                        </div>
+                        <div className="relative w-full">
+                          <div className="p-5 flex-1 flex-shrink h-full">
+                            <h5 className="mb-3 text-[#002f63] font-bold m-0 text-xl">
+                              Quality
+                            </h5>
+                            <p className="card-text"></p>
+                            <p>
+                              Structure - GI box pipe{" "}
+                              <b>to withstand high wind velocity</b> &amp; SS
+                              304 bolts &amp; nuts
+                            </p>
+                            <p>
+                              Cabling - EN type double insulated DC cable for
+                              maximum power output
+                            </p>
+                            <p>
+                              Civil work - Epoxy resin material for
+                              waterproofing &amp; PCC for structure strength
+                            </p>
+                            <p></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="relative w-full pr-4 pl-4 mt-3 xl:basis-1/2 xl:max-w-xl">
+                    {/* <style>
+                                                    @media  only screen and (min-width: 1200px) and (max-width: 1920px) {
+                                                        .responsive_after_service {
+                                                            height: 285px;
+                                                        }
+                                                    }
+                                                </style> */}
+
+                    <div className="relative flex flex-col min-w-0 break-words bg-white border-solid border-2 border-slate-400 mb-3 rounded  bg-clip-border responsive_after_service ">
+                      <div className="flex flex-nowrap">
+                        <div
+                          className="relative"
+                          style={{
+                            textAlign: "center",
+                            margin: "auto",
+                            display: "block",
+                          }}
+                        >
+                          <img
+                            src="https://nessolar.in/uploads/what-we-offer/what-we-offer-37920220621.png"
+                            className="rounded-sm p-2"
+                            alt="After Sales Service"
+                            style={{ width: "64px" }}
+                          />
+                        </div>
+                        <div className="relative w-full">
+                          <div className="p-5 flex-1 flex-shrink h-full">
+                            <h5 className="mb-3 text-[#002f63] font-bold m-0 text-xl">
+                              After Sales Service
+                            </h5>
+                            <p className="card-text"></p>
+                            <p>
+                              Communication with customers for{" "}
+                              <b>plant remote monitoring and efficiency</b>{" "}
+                            </p>
+                            <p>
+                              <b>Quick response</b> to customer service calls
+                              and on-site visit{" "}
+                            </p>
+                            <p>
+                              <b>Service report</b> preparation and submission
+                              to the customer
+                            </p>
+                            <p></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="relative w-full pr-4 pl-4 mt-3 xl:basis-1/2 xl:max-w-xl">
+                    <div className="relative flex flex-col min-w-0 break-words bg-white border-solid border-2 border-slate-400 mb-3 rounded bg-clip-border">
+                      <div className="flex flex-nowrap">
+                        <div
+                          className="relative"
+                          style={{
+                            textAlign: "center",
+                            margin: "auto",
+                            display: "block",
+                          }}
+                        >
+                          <img
+                            src="https://nessolar.in/uploads/what-we-offer/what-we-offer-30920221203.png"
+                            className="rounded-sm p-2"
+                            alt="Innovations , Commitment &amp; Safety"
+                            style={{ width: "64px" }}
+                          />
+                        </div>
+                        <div className="relative w-full">
+                          <div className="p-5 flex-1 flex-shrink h-full ">
+                            <h5 className="mb-3 text-[#002f63] font-bold m-0 text-xl">
+                              Innovations , Commitment &amp; Safety
+                            </h5>
+                            <p className="card-text"></p>
+                            <p>
+                              <b>Power optimization</b> technology for any roof
+                              orientations and directions
+                            </p>
+                            <p>
+                              <b>Maximum energy output</b> through the selection
+                              of PERC and bi-facial solar cell technology
+                            </p>
+                            <p>
+                              AC-DC <b>separate and parallel earthing</b> for
+                              the highest safety
+                            </p>
+                            <p>
+                              <b>Robotic thermography</b> - voltage current
+                              tracing, electroluminescence testing for solar
+                              panels
+                            </p>
+                            <p></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="relative w-full pr-4 pl-4 mt-3 xl:basis-1/2 xl:max-w-xl">
+                    {/* <style>
+                                                    @media  only screen and (min-width: 1200px) and (max-width: 1920px) {
+                                                        .responsive_skill {
+                                                            height: 354px;
+                                                        }
+                                                    }
+                                                </style> */}
+
+                    <div className="relative flex flex-col min-w-0 break-words bg-white border-solid border-2 border-slate-400 mb-3 rounded bg-clip-border  responsive_skill ">
+                      <div className="flex flex-nowrap">
+                        <div
+                          className="relative"
+                          style={{
+                            textAlign: "center",
+                            margin: "auto",
+                            display: "block",
+                          }}
+                        >
+                          <img
+                            src="https://nessolar.in/uploads/what-we-offer/what-we-offer-46920220620.png"
+                            className="rounded-sm p-2"
+                            alt="Skill"
+                            style={{ width: "64px" }}
+                          />
+                        </div>
+                        <div className="relative w-full">
+                          <div className="p-5 flex-1 flex-shrink h-full">
+                            <h5 className="mb-3 text-[#002f63] font-bold m-0 text-xl">
+                              Skill
+                            </h5>
+                            <p className="card-text"></p>
+                            <p>
+                              Pre site visit- <b>feasibility study</b> with
+                              solar module placement drawing as rooftop area{" "}
+                            </p>
+                            <p>
+                              <b>3D</b> modeling <b>design</b>{" "}
+                            </p>
+                            <p>
+                              <b>Shadow analysis</b> report
+                            </p>
+                            <p>
+                              Month-wise solar energy generation report with{" "}
+                              <b>payback calculation</b>
+                            </p>
+                            <p></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="relative w-full pr-4 pl-4 mt-3 xl:basis-1/2 xl:max-w-xl">
+                    <div className="relative flex flex-col min-w-0 break-words bg-white border-solid border-2 border-slate-400 mb-3 rounded bg-clip-border">
+                      <div className="flex flex-nowrap">
+                        <div
+                          className="relative"
+                          style={{
+                            textAlign: "center",
+                            margin: "auto",
+                            display: "block",
+                          }}
+                        >
+                          <img
+                            src="https://nessolar.in/uploads/what-we-offer/what-we-offer-11420221200.png"
+                            className="rounded-sm p-2"
+                            alt="Return on Investment"
+                            style={{ width: "64px" }}
+                          />
+                        </div>
+                        <div className="relative w-full">
+                          <div className="p-5 flex-1 flex-shrink h-full">
+                            <h5 className="mb-3 text-[#002f63] font-bold m-0 text-xl">
+                              Return on Investment
+                            </h5>
+                            <p className="card-text"></p>
+                            <p>
+                              Committed to achieving <b>3-4 years</b> of system{" "}
+                              <b>Payback</b> period
+                            </p>
+                            <p>
+                              <b>Savings</b> on electricity bills{" "}
+                              <b>for the next 22 years</b>
+                            </p>
+                            <p>
+                              Material selection for{" "}
+                              <b>25 years of performance</b>
+                            </p>
+                            <p></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="relative w-full pr-4 pl-4 mt-3 xl:basis-1/2 xl:max-w-xl">
+                    {/* <style>
+                                                    @media  only screen and (min-width: 1200px) and (max-width: 1920px) {
+                                                        .responsive_competence {
+                                                            height: 234px;
+                                                        }
+                                                    }
+                                                </style> */}
+
+                    <div className="relative flex flex-col min-w-0 break-words bg-white border-solid border-2 border-slate-400 mb-3 rounded bg-clip-border responsive_competence ">
+                      <div className="flex flex-nowrap">
+                        <div
+                          className="relative"
+                          style={{
+                            textAlign: "center",
+                            margin: "auto",
+                            display: "block",
+                          }}
+                        >
+                          <img
+                            src="https://nessolar.in/uploads/what-we-offer/what-we-offer-79020220620.png"
+                            className="rounded-sm p-2"
+                            alt="Competence"
+                            style={{ width: "64px" }}
+                          />
+                        </div>
+                        <div className="relative w-full">
+                          <div className="p-5 flex-1 flex-shrink h-full ">
+                            <h5 className="mb-3 text-[#002f63] font-bold m-0 text-xl">
+                              Competence
+                            </h5>
+                            <p className="card-text"></p>
+                            <p>
+                              Technically competent &amp;{" "}
+                              <b>experienced engineering team</b>
+                            </p>
+                            <p>
+                              Quick troubleshooting by a{" "}
+                              <b>trained service team</b>{" "}
+                            </p>
+                            <p>
+                              Organizations <b>prudent business policies</b>
+                            </p>
+                            <p></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <Footer />
     </div>
   );

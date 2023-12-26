@@ -1,15 +1,19 @@
-import Image from "next/image";
-import styles from "./page.module.css";
-import Header from "@/components/Header";
-import Hero from "@/components/Hero";
-import Footer from "@/components/Footer";
+import Hero from "@/src/components/Hero";
+import ScrollUp from "@/src/components/common/ScrollUp";
+import About from "@/src/pages/About";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "NES Solar",
+  description: "This is Home for Startup Next js Template",
+  // other metadata
+};
 
 export default function Home() {
   return (
-    <div>
-      <Header />
+    <>
+      <ScrollUp />
       <Hero />
-      <Footer />
-    </div>
+    </>
   );
 }

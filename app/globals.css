@@ -647,3 +647,161 @@
     transform: translate(-50%);
   }
 }
+.number-bg {
+  background-color: hsla(0, 0%, 100%, 0.7);
+  background-blend-mode: color;
+  background-size: cover;
+  background-position: 50%;
+}
+
+.rowCounter {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--bs-gutter-y));
+  margin-right: calc(-0.5 * var(--bs-gutter-x));
+  margin-left: calc(-0.5 * var(--bs-gutter-x));
+}
+@media (min-width: 992px) {
+  .col-lg-5 {
+    flex: 0 0 auto;
+    width: 41.66666667%;
+  }
+}
+@media (min-width: 992px) {
+  .pe-lg-5 {
+    padding-right: 3rem !important;
+  }
+}
+.counter-joinBtn {
+  padding: 1rem;
+  font-size: 1.25rem;
+  border-radius: 0.5rem;
+  transition: 0.3s ease-in-out;
+}
+@media (min-width: 992px) {
+  .col-lg-7 {
+    flex: 0 0 auto;
+    width: 58.33333333%;
+  }
+}
+.btn-primary {
+  color: white;
+  background-color: #002f63;
+  border-color: #002f63;
+}
+.col-primary {
+  background-image: linear-gradient(
+    242.52deg,
+    hsl(240deg 100% 20%) 0%,
+    hsl(237deg 100% 20%) 11%,
+    hsl(233deg 100% 20%) 22%,
+    hsl(230deg 100% 20%) 33%,
+    hsl(228deg 100% 20%) 44%,
+    hsl(224deg 100% 20%) 56%,
+    hsl(221deg 100% 20%) 67%,
+    hsl(218deg 100% 20%) 78%,
+    hsl(215deg 100% 19%) 89%,
+    hsl(212deg 100% 19%) 100%
+  );
+  background: linear-gradient(180deg, #090a67, #0f2959);
+  /* background: linear-gradient(242.52deg, #8c000f -6.13%, #e42c40 102.02%); */
+}
+.offset-1 {
+  margin-left: 8.33333333%;
+}
+
+.col-2 {
+  flex: 0 0 auto;
+  /* width: 16.66666667%; */
+}
+.col-body {
+  isolation: isolate;
+  height: 145px;
+}
+.col-primary:before {
+  background: linear-gradient(
+    138.48deg,
+    hsla(246, 88%, 19%, 0.6) -44.69%,
+    hsla(0, 72%, 76%, 0) 75.98%
+  );
+}
+.col-body:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: calc(40% - 52px);
+  top: calc(40% - 52px);
+  width: 104px;
+  height: 102px;
+  background: linear-gradient(
+    138.98deg,
+    hsla(0, 0%, 93%, 0.8) 3.5%,
+    hsla(0, 3%, 89%, 0) 88.86%
+  );
+  border-radius: 50%;
+}
+.col-light {
+  background: #faf9f9;
+  border: 1px solid #ededed;
+}
+.col-dark {
+  background: linear-gradient(180deg, #393939, #232323);
+  border: 1px solid #28292e;
+}
+.col-dark:before {
+  background: linear-gradient(
+    138.98deg,
+    rgba(74, 74, 74, 0.6) 3.5%,
+    rgba(47, 47, 47, 0) 88.86%
+  );
+}
+.text-white-gradient {
+  background: linear-gradient(
+    182.04deg,
+    #fff 22.95%,
+    hsla(0, 0%, 77%, 0.9) 78.74%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.col-6 {
+  flex: 0 0 auto;
+  width: 50%;
+}
+.col-3 {
+  flex: 0 0 auto;
+  width: 25%;
+}
+.text-primary {
+  opacity: 1;
+  color: #002f63 !important;
+}
+.col-4 {
+  flex: 0 0 auto;
+  width: 33.33333333%;
+}
+.offset-2 {
+  margin-left: 16.66666667%;
+}
+.col-dark-2 {
+  background: linear-gradient(0deg, #252525, #232323);
+  margin-top: -1px;
+}
+.bg-cover-center,
+.bg-nor-cover-center,
+.case-study-bg,
+.number-bg,
+.workforce-arrow:after {
+  background-size: cover;
+  background-position: 50%;
+}
+.newBox:hover {
+  transition: all 0.2s ease-out;
+  box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+  top: -4px;
+  border: 1px solid #cccccc;
+  background-color: white;
+}

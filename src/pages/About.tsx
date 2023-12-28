@@ -6,6 +6,7 @@ import "../../app/globals.css";
 import { imageData2 } from "../data/About/ImageData2";
 import { imageData } from "../data/About/ImageData";
 import ScrollToTop from "../components/ScrollToTop";
+import HeroImageSection from "../components/common/HeroImageSection";
 
 const OfferData = [
   {
@@ -66,21 +67,11 @@ export default function About() {
     <div>
       <Header />
       <ScrollToTop />
-
-      <section className="relative py-24 px-4 before:absolute  before:top-0 before:left-0 before:h-full before:w-full before:-z-10 before:bg-gray-100 ">
-        <div className="z-20 relative text-[#002f63] container mx-auto">
-          <p className=" font-bold text-4xl ">About Us</p>
-        </div>
-        <div className={`absolute inset-0 h-[55vh] z-10`}>
-          <img
-            src="..\assets\New3.png"
-            alt=""
-            className="h-full w-full object-fit-cover"
-          />
-          <div className="absolute inset-0 h-[55vh] z-20 bg-white bg-opacity-20" />
-        </div>
-      </section>
-      <section className="relative block pt-48 pr-0 pl-0 pb-12">
+      <HeroImageSection
+        title="About Us"
+        imgSrc={"../assets/Our+Approach.jpg"}
+      />
+      <section className="relative block pt-32 pr-0 pl-0 pb-12">
         <div className="container mx-auto">
           <div className="flex flex-wrap -mr-4 -ml-4">
             <div className="relative w-full pr-4 pl-4 md:flex-1 max-w-4xl">
@@ -102,8 +93,12 @@ export default function About() {
               <div className="relative block mt-12">
                 <div className="relative block">
                   <div className="table-cell align-middle">
-                    <h2 className="text-[#002f63] font-bold m-0 text-3xl before:absolute before:w-60 before:pt-6 before:left-0 before:right-0 before:-bottom-2.5 before:border-b-4 before:border-b-solid before:border-b-black">
+                    <h2 className="text-black font-bold m-0 text-3xl before:absolute before:w-60 before:pt-6 before:left-0 before:right-0 ">
                       Commitment to excellence
+                      <p className="fa_tt_span">
+                        <span></span>
+                        <span></span>
+                      </p>
                     </h2>
                   </div>
                 </div>
@@ -214,7 +209,7 @@ export default function About() {
         </div>
       </section>
       <section
-        className="relative block pt-28 pb-24 px-0"
+        className="relative block pt-16 pb-24 px-0"
         style={{ background: "#002f630a" }}
       >
         <div className="container pr-4 pl-4 mr-auto ml-auto md:max-w-7xl">
@@ -245,45 +240,92 @@ export default function About() {
             <div className="relative w-full pr-4 pl-4">
               <div className="relative block">
                 <div className="flex flex-wrap -mr-4 -ml-4 justify-center">
-                  {OfferData.map((data) => {
-                    return (
-                      // eslint-disable-next-line react/jsx-key
-                      <div className="relative w-full pr-4 pl-4 mt-3 xl:basis-1/2 xl:max-w-xl ">
-                        <div className="newBox relative flex flex-col min-w-0 break-words bg-white border-solid border-2 border-slate-400 mb-3 rounded bg-clip-border h-full">
-                          <div className="flex flex-nowrap">
-                            <div
-                              className="relative"
-                              style={{
-                                textAlign: "center",
-                                margin: "auto",
-                                display: "block",
-                              }}
-                            >
-                              <img
-                                src={data.logo}
-                                className="rounded-sm p-2"
-                                alt="Quality"
-                                style={{ width: "64px" }}
-                              />
-                            </div>
-                            <div className="relative w-full">
-                              <div className="p-5 flex-1 flex-shrink h-full">
-                                <h5 className="mb-3 text-[#002f63] font-bold  text-xl">
+                  <div className="flex items-center justify-center">
+                    <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-3">
+                      {OfferData.map((data) => {
+                        return (
+                          // eslint-disable-next-line react/jsx-key
+                          <>
+                            <div className="relative bg-gradient-to-r from-blue-950 to-blue-900 py-8 px-8 rounded-3xl w-96 my-4 shadow-xl mt-10">
+                              <div className=" text-white flex items-center absolute rounded-full py-4 px-4 shadow-xl bg-white left-4 -top-16">
+                                <img
+                                  className="w-20 h-20 object-cover  mx-auto "
+                                  src={data.logo}
+                                  alt="User avatar"
+                                />
+                              </div>
+                              <div className="mt-8">
+                                <p className="text-xl font-semibold my-2 text-gray-100">
                                   {data.title}
-                                </h5>
-                                <p className="p-text"></p>
-                                <p className="p-text">{data.text1}</p>
-                                <p className="p-text">{data.text2}</p>
-                                <p className="p-text">{data.text3}</p>
-                                <p className="p-text">{data.text4}</p>
-                                <p className="p-text"></p>
+                                </p>
+                                <div className="flex space-x-2 text-gray-200 text-sm leading-5 tracking-wider">
+                                  <p>
+                                    {data.text1}
+                                    {data.text2}
+                                    {data.text3}
+                                    {data.text4}
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+
+                            {/* <div className="mx-5  grid place-content-center">
+                          <div className="bg-gradient-to-r from-blue-950 to-blue-900 rounded-2xl text-white p-8 text-center h-72 max-w-sm mx-auto">
+                            <h1 className="text-2xl mb-1">{data.title}</h1>
+                            <p className="text-base">
+                              {data.text1}
+                              {data.text2}
+                              {data.text3}
+                              {data.text4}
+                            </p>
+                          </div>
+                          <div className="bg-white mt-20 py-2 px-10 text-center rounded-md shadow-lg transform -translate-y-20 sm:-translate-y-24 max-w-xs mx-auto">
+                            <img
+                              className="w-20 h-20 object-cover  mx-auto "
+                              src={data.logo}
+                              alt="User avatar"
+                            />
+                          </div>
+                        </div> */}
+                            {/* <div className="relative w-full pr-4 pl-4 mt-3 xl:basis-1/2 xl:max-w-xl ">
+                          <div className="newBox relative flex flex-col min-w-0 break-words bg-white border-solid border-2 border-slate-400 mb-3 rounded bg-clip-border h-full">
+                            <div className="flex flex-nowrap">
+                              <div
+                                className="relative"
+                                style={{
+                                  textAlign: "center",
+                                  margin: "auto",
+                                  display: "block",
+                                }}
+                              >
+                                <img
+                                  src={data.logo}
+                                  className="rounded-sm p-2"
+                                  alt="Quality"
+                                  style={{ width: "64px" }}
+                                />
+                              </div>
+                              <div className="relative w-full">
+                                <div className="p-5 flex-1 flex-shrink h-full">
+                                  <h5 className="mb-3 text-[#002f63] font-bold  text-xl">
+                                    {data.title}
+                                  </h5>
+                                  <p className="p-text"></p>
+                                  <p className="p-text">{data.text1}</p>
+                                  <p className="p-text">{data.text2}</p>
+                                  <p className="p-text">{data.text3}</p>
+                                  <p className="p-text">{data.text4}</p>
+                                  <p className="p-text"></p>
+                                </div>
                               </div>
                             </div>
                           </div>
-                        </div>
-                      </div>
-                    );
-                  })}
+                        </div> */}
+                          </>
+                        );
+                      })}
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

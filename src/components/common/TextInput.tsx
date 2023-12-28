@@ -12,6 +12,7 @@ export const TextInput = ({
   label,
   muiProps,
   InputProps,
+  fullWidth,
   required,
   type,
   iName,

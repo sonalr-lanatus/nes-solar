@@ -87,10 +87,12 @@ function Header() {
                   />
                 </ListItemButton>
                 <ListItemButton>
-                  <ListItemText
-                    sx={{ fontWeight: "500" }}
-                    primary="Contact us"
-                  />
+                  <Link href="/Contact">
+                    <ListItemText
+                      sx={{ fontWeight: "500" }}
+                      primary="Contact us"
+                    />
+                  </Link>
                 </ListItemButton>
               </Box>
             </Box>

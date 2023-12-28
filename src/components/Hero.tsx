@@ -69,7 +69,7 @@ function Hero() {
     <>
       <div className="flex flex-col py-16 lg:h-[65vh] lg:justify-end lg:pb-12 ">
         <div className="items-center text-center flex flex-col h-full justify-center w-full z-10 relative ">
-          <h1 className="text-white font-medium mt-0 mr-0 mb-10 text-center font-serif text-4xl leading-5 md:leading-10 sm:leading-10">
+          <h1 className="text-white font-medium mt-0 mr-0 mb-10 text-center font-serif text-4xl leading-5 md:leading-10 sm:leading-10 ">
             One Stop Solutions for Design,Execution and O&M
           </h1>
 
@@ -107,15 +107,15 @@ function Hero() {
         >
           <Grid
             container
-            rowSpacing={1}
+            spacing={1}
             display="flex"
             alignItems="center"
             justifyContent="center"
           >
             {tiles.map((tile) => (
               <Grid
-                xs={2.4}
                 key={tile.label}
+                xs={2.4}
                 sx={{ visibility: tile.hidden ? "hidden" : "visible" }}
               >
                 <Tooltip title="Click & Enquire now">
@@ -131,7 +131,7 @@ function Hero() {
             ))}
           </Grid>
         </Box>
-        <div className="absolute top-20 left-0 h-[95vh] w-full md:h-50vh">
+        <div className="absolute top-20 left-0 h-[95vh] w-full md:h-[45vh] sm:h-[40vh] \ lg:h-[100vh]">
           <div className="slide">
             <div style={{ backgroundImage: "url(/assets/New1.png)" }}></div>
             <div style={{ backgroundImage: "url(/assets/New2.png)" }}></div>

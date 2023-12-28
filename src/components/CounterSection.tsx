@@ -1,8 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable react/jsx-no-comment-textnodes */
-import React, { useEffect, useState } from "react";
+import React from "react";
 import CountUp from "react-countup";
-import ReactVisibilitySensor from "react-visibility-sensor";
 
 export default function CounterSection() {
   return (
@@ -73,13 +72,14 @@ export default function CounterSection() {
           >
             <div className="ks-growth-num w-40 offset-1 col-2 col-body col-primary text-white flex flex-col justify-between p-3 relative rounded-tl-xl">
               <div className="text-5xl font-semibold">
-                <CountUp end={90}>
-                  {({ countUpRef, start }) => (
-                    <ReactVisibilitySensor onChange={start}>
-                      <span ref={countUpRef} />
-                    </ReactVisibilitySensor>
-                  )}
-                </CountUp>
+                <CountUp
+                  start={0}
+                  enableScrollSpy={true}
+                  useEasing={true}
+                  scrollSpyOnce={true}
+                  duration={3}
+                  end={90}
+                ></CountUp>
                 <span style={{ transform: "none" }}></span>%
               </div>
               <div className="text-base font-medium uppercase whitespace-nowrap">
@@ -89,13 +89,15 @@ export default function CounterSection() {
             </div>
             <div className="ks-growth-num col-2 w-40 col-body col-light flex flex-col justify-between p-3 relative">
               <div className="text-5xl font-semibold ">
-                <CountUp end={2012} separator="">
-                  {({ countUpRef, start }) => (
-                    <ReactVisibilitySensor onChange={start}>
-                      <span ref={countUpRef} />
-                    </ReactVisibilitySensor>
-                  )}
-                </CountUp>
+                <CountUp
+                  start={0}
+                  end={2012}
+                  separator=""
+                  enableScrollSpy={true}
+                  useEasing={true}
+                  scrollSpyOnce={true}
+                  duration={3}
+                ></CountUp>
                 <span style={{ transform: "none" }}></span>
               </div>
               <div className="font-medium text-base uppercase">Foundation</div>
@@ -105,13 +107,15 @@ export default function CounterSection() {
                 className="font-medium text-4xl
                text-white-gradient"
               >
-                <CountUp end={2000} separator="">
-                  {({ countUpRef, start }) => (
-                    <ReactVisibilitySensor onChange={start}>
-                      <span ref={countUpRef} />
-                    </ReactVisibilitySensor>
-                  )}
-                </CountUp>
+                <CountUp
+                  end={2000}
+                  separator=""
+                  start={0}
+                  enableScrollSpy={true}
+                  useEasing={true}
+                  scrollSpyOnce={true}
+                  duration={3}
+                ></CountUp>
                 <span style={{ transform: "none" }}></span>
                 <span className="text-primary">+</span>
               </div>
@@ -121,13 +125,15 @@ export default function CounterSection() {
             </div>
             <div className="ks-growth-num col-6 col-body col-dark text-white flex flex-col justify-between p-3 relative rounded-tl-xl rounded-bl-xl">
               <div className=" text-5xl font-semibold text-right text-white-gradient">
-                <CountUp end={1200} separator="">
-                  {({ countUpRef, start }) => (
-                    <ReactVisibilitySensor onChange={start}>
-                      <span ref={countUpRef} />
-                    </ReactVisibilitySensor>
-                  )}
-                </CountUp>
+                <CountUp
+                  start={0}
+                  enableScrollSpy={true}
+                  useEasing={true}
+                  scrollSpyOnce={true}
+                  duration={3}
+                  end={1200}
+                  separator=""
+                ></CountUp>
                 <span style={{ transform: "none" }}></span>
                 <span className="text-primary">+</span>
               </div>
@@ -140,13 +146,15 @@ export default function CounterSection() {
             </div>
             <div className="ks-growth-num col-3 col-body col-light flex flex-col justify-between p-3 relative">
               <div className="text-5xl font-semibold ">
-                <CountUp end={800} separator="">
-                  {({ countUpRef, start }) => (
-                    <ReactVisibilitySensor onChange={start}>
-                      <span ref={countUpRef} />
-                    </ReactVisibilitySensor>
-                  )}
-                </CountUp>
+                <CountUp
+                  start={0}
+                  enableScrollSpy={true}
+                  useEasing={true}
+                  scrollSpyOnce={true}
+                  duration={3}
+                  end={800}
+                  separator=""
+                ></CountUp>
                 <span style={{ transform: "none" }}></span>
                 <span className="text-primary">+</span>
               </div>
@@ -156,13 +164,15 @@ export default function CounterSection() {
             </div>
             <div className="ks-growth-num col-3 col-body col-dark text-white flex flex-col justify-between p-3 relative rounded-tr-xl">
               <div className="font-semibold text-right text-5xl display-3 text-white-gradient">
-                <CountUp end={4} separator="">
-                  {({ countUpRef, start }) => (
-                    <ReactVisibilitySensor onChange={start}>
-                      <span ref={countUpRef} />
-                    </ReactVisibilitySensor>
-                  )}
-                </CountUp>
+                <CountUp
+                  start={0}
+                  enableScrollSpy={true}
+                  useEasing={true}
+                  scrollSpyOnce={true}
+                  duration={3}
+                  end={4}
+                  separator=""
+                ></CountUp>
                 <span style={{ transform: "none" }}></span>
               </div>
               <div className="text-base font-medium text-right uppercase space-xl-nowrap">
@@ -172,13 +182,15 @@ export default function CounterSection() {
             </div>
             <div className="ks-growth-num  col-3 col-body col-light flex flex-col justify-between p-3  relative rounded-bl-xl">
               <div className="font-semibold text-4xl">
-                <CountUp end={100} separator="">
-                  {({ countUpRef, start }) => (
-                    <ReactVisibilitySensor onChange={start}>
-                      <span ref={countUpRef} />
-                    </ReactVisibilitySensor>
-                  )}
-                </CountUp>
+                <CountUp
+                  start={0}
+                  enableScrollSpy={true}
+                  useEasing={true}
+                  scrollSpyOnce={true}
+                  duration={3}
+                  end={100}
+                  separator=""
+                ></CountUp>
                 <span style={{ transform: "none" }}></span>
                 <span className="text-primary">+</span>
               </div>
@@ -188,13 +200,15 @@ export default function CounterSection() {
             </div>
             <div className="ks-growth-num  col-3 col-body col-dark text-white flex flex-col justify-between p-3  relative">
               <div className="font-semibold text-3xl text-white-gradient">
-                <CountUp end={35000} separator="">
-                  {({ countUpRef, start }) => (
-                    <ReactVisibilitySensor onChange={start}>
-                      <span ref={countUpRef} />
-                    </ReactVisibilitySensor>
-                  )}
-                </CountUp>
+                <CountUp
+                  start={0}
+                  enableScrollSpy={true}
+                  useEasing={true}
+                  scrollSpyOnce={true}
+                  duration={3}
+                  end={35000}
+                  separator=""
+                ></CountUp>
                 <span style={{ transform: "none" }}></span>
                 <span className="text-primary">+</span>
               </div>
@@ -204,13 +218,15 @@ export default function CounterSection() {
             </div>
             <div className="ks-growth-num col-3 col-body col-primary text-white flex flex-col justify-between p-3 relative">
               <div className="font-semibold text-4xl text-white-gradient">
-                <CountUp end={7000} separator="" scrollSpyDelay={1}>
-                  {({ countUpRef, start }) => (
-                    <ReactVisibilitySensor onChange={start}>
-                      <span ref={countUpRef} />
-                    </ReactVisibilitySensor>
-                  )}
-                </CountUp>
+                <CountUp
+                  start={0}
+                  enableScrollSpy={true}
+                  useEasing={true}
+                  scrollSpyOnce={true}
+                  duration={3}
+                  end={7000}
+                  separator=""
+                ></CountUp>
                 <span style={{ transform: "none" }}></span>
                 <span className="text-primary">+</span>
               </div>

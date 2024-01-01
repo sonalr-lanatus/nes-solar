@@ -10,7 +10,7 @@ import HeroImageSection from "../components/common/HeroImageSection";
 
 const OfferData = [
   {
-    logo: "https://nessolar.in/uploads/what-we-offer/what-we-offer-70520220620.png",
+    logo: "../assets/About/what-we-offer-70520220620.png",
     title: "Quality",
     text1:
       "Structure - GI box pipe to withstand high wind velocity & SS 304 bolts & nuts",
@@ -20,7 +20,7 @@ const OfferData = [
       "Civil work - Epoxy resin material for waterproofing & PCC for structure strength",
   },
   {
-    logo: "https://nessolar.in/uploads/what-we-offer/what-we-offer-37920220621.png",
+    logo: "../assets/About/what-we-offer-37920220621.png",
     title: "After Sales Service",
     text1:
       "Communication with customers for plant remote monitoring and efficiency",
@@ -28,7 +28,7 @@ const OfferData = [
     text3: "Service report preparation and submission to the customer",
   },
   {
-    logo: "https://nessolar.in/uploads/what-we-offer/what-we-offer-30920221203.png",
+    logo: "../assets/About/what-we-offer-30920221203.png",
     title: "Innovations , Commitment & Safety",
     text1:
       "Power optimization technology for any roof orientations and directions",
@@ -39,7 +39,7 @@ const OfferData = [
       "Robotic thermography - voltage current tracing, electroluminescence testing for solar panels",
   },
   {
-    logo: "https://nessolar.in/uploads/what-we-offer/what-we-offer-46920220620.png",
+    logo: "../assets/About/what-we-offer-46920220620.png",
     title: "Skill",
     text1:
       "Pre site visit- feasibility study with solar module placement drawing as rooftop area",
@@ -48,14 +48,14 @@ const OfferData = [
     text4: "Month-wise solar energy generation report with payback calculation",
   },
   {
-    logo: "https://nessolar.in/uploads/what-we-offer/what-we-offer-11420221200.png",
+    logo: "../assets/About/what-we-offer-11420221200.png",
     title: "Return on Investment",
     text1: "Committed to achieving 3-4 years of system Payback period",
     text2: "Savings on electricity bills for the next 22 years",
     text3: "Material selection for 25 years of performance",
   },
   {
-    logo: "https://nessolar.in/uploads/what-we-offer/what-we-offer-79020220620.png",
+    logo: "../assets/About/what-we-offer-79020220620.png",
     title: "Competence",
     text1: "Technically competent & experienced engineering team",
     text2: "Quick troubleshooting by a trained service team",
@@ -77,7 +77,7 @@ export default function About() {
             <div className="relative w-full pr-4 pl-4 md:flex-1 max-w-4xl">
               <div className="relative block mt-2.5">
                 <img
-                  src="https://nessolar.in/uploads/about/about-image-59220220128.jpg"
+                  src="../assets/About/about-image-59220220128.jpg"
                   alt="Awesome Image"
                   style={{
                     height: "500px",

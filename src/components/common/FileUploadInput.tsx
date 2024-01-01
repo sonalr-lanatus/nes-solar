@@ -9,7 +9,7 @@ import {
   Button,
 } from "@mui/material";
 
-export default function FormComponent({
+export default function FileUploadInput({
   label,
   required,
   name,
@@ -17,7 +17,7 @@ export default function FormComponent({
   handleFileUpload,
   documentSizeError,
   selectFile,
-}) {
+}: any) {
   const {
     register,
     formState: { errors },

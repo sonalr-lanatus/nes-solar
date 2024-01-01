@@ -691,6 +691,11 @@
   background-color: #002f63;
   border-color: #002f63;
 }
+.btn-primary:hover {
+  color: white;
+  background-color: #002f63;
+  border-color: #002f63;
+}
 .col-primary {
   background-image: linear-gradient(
     242.52deg,
@@ -827,13 +832,7 @@
   margin-right: -15px;
   margin-left: -15px;
 }
-@media (min-width: 1200px) {
-  .col-xl-6 {
-    -ms-flex: 0 0 50%;
-    flex: 0 0 50%;
-    max-width: 50%;
-  }
-}
+
 #c_form_058-1666706123945 .e_container-18 {
   position: relative;
   z-index: 20;
@@ -858,7 +857,6 @@
   flex-wrap: wrap;
   flex-direction: row;
   width: 100%;
-  display-radio: flex;
 }
 
 @media screen and (min-width: 769px) {
@@ -871,7 +869,6 @@
   flex-wrap: wrap;
   flex-direction: row;
   width: 100%;
-  display-radio: flex;
   margin-top: 0px;
   margin-bottom: 3vw;
 }
@@ -900,7 +897,6 @@
   flex-wrap: wrap;
   flex-direction: row;
   width: 100%;
-  display-radio: flex;
 }
 #c_form_058-1666706123945 .fa_tel_li:before {
   position: absolute;
@@ -938,7 +934,6 @@
   padding: 2vw;
   border-radius: 30px;
   box-shadow: 0 5px 50px rgb(0 0 0 / 10%);
-  display-radio: 1;
   background-color: #fff;
   max-width: none;
 }
@@ -1018,16 +1013,6 @@
   margin-bottom: 30px;
   transition: all 500ms ease;
 }
-.s_form_layout1 .invalid-feedback {
-  color: #f56c6c;
-}
-.invalid-feedback {
-  display: none;
-  width: 100%;
-  margin-top: 0.25rem;
-  font-size: 80%;
-  color: #dc3545;
-}
 
 label {
   margin-bottom: 0.5rem;
@@ -1044,4 +1029,34 @@ label {
 .alert,
 .form-group {
   margin-bottom: 1rem;
+}
+
+.text {
+  font-weight: 400;
+  letter-spacing: 1.7px;
+  font-family: "Kanit";
+  font-size: 16px;
+  fill: #000;
+  text-shadow: 2px 0px #ffffff;
+}
+#rotatingText {
+  animation-name: rotate-circle;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rotate-circle {
+  to {
+    transform: rotate(1turn);
+  }
+}
+.main {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+.circle {
+  position: absolute;
 }

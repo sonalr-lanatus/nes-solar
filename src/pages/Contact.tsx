@@ -16,14 +16,14 @@ export default function Contact() {
         title="Contact Us"
         imgSrc={"../assets/Our+Approach.jpg"}
       />
-      <section className="relative py-10 px-8">
+      <section className="relative py-10 px-8 ">
         <div
           id="c_form_058-1666706123945"
           className="response-animated pt-5 pb-5"
         >
           <div className="e_container-18 s_layout fa_wrapper response-transition">
             <div className="relative max-w-full max-h-full">
-              <div className="e_container-19 s_layout response-transition">
+              <div className="e_container-19 s_layout response-transition  ">
                 <div className="cbox-19-0 p_item">
                   <div className="e_container-26 s_layout response-transition">
                     <div className="cbox-26-0 p_item">

@@ -31,6 +31,7 @@ export const TextInput = ({
     register,
     formState: { errors },
   } = useFormContext();
+  console.log(rows);
 
   const textField = register(iName, { required, pattern });
   return (

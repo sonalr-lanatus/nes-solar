@@ -6,6 +6,9 @@ import styled from "@mui/system/styled";
 import { Tooltip } from "@mui/material";
 import EnquireFormComponent from "./common/EnquireFormComponent";
 import CounterSection from "./CounterSection";
+import Marquee from "react-fast-marquee";
+import { imageData } from "../data/About/ImageData";
+import { imageData2 } from "../data/About/ImageData2";
 
 const Item = styled("div")(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
@@ -153,6 +156,64 @@ function Hero() {
       {open ? <EnquireFormComponent title={formTitle} setOpen={setOpen} /> : ""}
       <div className="pt-20">
         <CounterSection />
+      </div>
+      <div className="brand-wrapper gradient-bg pt-12">
+        <div className=" mb-14 text-center">
+          <h2 className="text-4xl">
+            <span className="text-line" style={{ color: "black" }}>
+              Our{" "}
+              <span
+                className="text-bold"
+                style={{ color: "black", fontWeight: "bold" }}
+              >
+                Client
+              </span>
+            </span>
+          </h2>
+        </div>
+        <div className="Marquee">
+          <Marquee
+            direction="right"
+            autoFill={true}
+            speed={50}
+            pauseOnHover={true}
+            style={{ overflow: "hidden" }}
+          >
+            {imageData.map((data) => {
+              return (
+                // eslint-disable-next-line react/jsx-key
+                <div className="Marquee-tag">
+                  <img
+                    src={data.clientele}
+                    alt="Flexibond"
+                    style={{ padding: "15px" }}
+                  />
+                </div>
+              );
+            })}
+          </Marquee>
+        </div>
+        <div className="Marquee">
+          <Marquee
+            direction="left"
+            autoFill={true}
+            speed={50}
+            pauseOnHover={true}
+          >
+            {imageData2.map((data) => {
+              return (
+                // eslint-disable-next-line react/jsx-key
+                <div className="Marquee-tag">
+                  <img
+                    src={data.clientele}
+                    alt="Flexibond"
+                    style={{ padding: "15px" }}
+                  />
+                </div>
+              );
+            })}
+          </Marquee>
+        </div>
       </div>
     </>
   );

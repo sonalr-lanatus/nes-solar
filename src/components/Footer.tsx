@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 export default function Footer() {
@@ -156,25 +157,25 @@ export default function Footer() {
                   <li>
                     <a
                       className="font-white transition hover:text-gray-700/75"
-                      href="/"
+                      href="/SolarPlanningInstallation"
                     >
                       Solar EPC
                     </a>
                   </li>
 
                   <li>
-                    <a
+                    <Link
+                      href="/ProjectFinance"
                       className="font-white transition hover:text-gray-700/75"
-                      href="/"
                     >
                       Project Finance
-                    </a>
+                    </Link>
                   </li>
 
                   <li>
                     <a
                       className="font-white transition hover:text-gray-700/75"
-                      href="/"
+                      href="/SolarOperationAndMaintenance"
                     >
                       Solar O&M
                     </a>
@@ -236,7 +237,7 @@ export default function Footer() {
                   <li>
                     <a
                       className="font-white transition hover:text-gray-700/75"
-                      href="/"
+                      href="/About"
                     >
                       Why Us
                     </a>
@@ -261,7 +262,7 @@ export default function Footer() {
                   <li>
                     <a
                       className="font-white transition hover:text-gray-700/75"
-                      href="/"
+                      href="/Awards"
                     >
                       Awards
                     </a>

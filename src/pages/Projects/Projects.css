@@ -1,0 +1,277 @@
+.main-project-area {
+  position: relative;
+  display: block;
+  background: #ffffff;
+  padding: 100px 0 100px;
+}
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.col,
+.col-1,
+.col-10,
+.col-11,
+.col-12,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-auto,
+.col-lg,
+.col-lg-1,
+.col-lg-10,
+.col-lg-11,
+.col-lg-12,
+.col-lg-2,
+.col-lg-3,
+.col-lg-4,
+.col-lg-5,
+.col-lg-6,
+.col-lg-7,
+.col-lg-8,
+.col-lg-9,
+.col-lg-auto,
+.col-md,
+.col-md-1,
+.col-md-10,
+.col-md-11,
+.col-md-12,
+.col-md-2,
+.col-md-3,
+.col-md-4,
+.col-md-5,
+.col-md-6,
+.col-md-7,
+.col-md-8,
+.col-md-9,
+.col-md-auto,
+.col-sm,
+.col-sm-1,
+.col-sm-10,
+.col-sm-11,
+.col-sm-12,
+.col-sm-2,
+.col-sm-3,
+.col-sm-4,
+.col-sm-5,
+.col-sm-6,
+.col-sm-7,
+.col-sm-8,
+.col-sm-9,
+.col-sm-auto,
+.col-xl,
+.col-xl-1,
+.col-xl-10,
+.col-xl-11,
+.col-xl-12,
+.col-xl-2,
+.col-xl-3,
+.col-xl-4,
+.col-xl-5,
+.col-xl-6,
+.col-xl-7,
+.col-xl-8,
+.col-xl-9,
+.col-xl-auto {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.single-project-style3.marbtm30 {
+  margin-bottom: 30px;
+}
+
+.single-project-style3 {
+  position: relative;
+  display: block;
+}
+.single-project-style3 .img-holder {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+.single-project-style3 .overlay-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background: rgba(32, 53, 96, 0.9);
+  transform: scaleX(0);
+  transition: all 700ms ease 100ms;
+}
+.single-project-style3 .overlay-content .inner-content {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+.single-project-style3 .overlay-content .inner-content .title-box {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  transform: scale(0);
+  transition: all 700ms ease 500ms;
+}
+.single-project-style3 .overlay-content .inner-content .title-box h3 {
+  margin: 0 0 8px;
+}
+
+h3 {
+  font-size: 20px;
+  line-height: 26px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #002f63;
+  font-weight: 700;
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+}
+.single-project-style3 .overlay-content .inner-content .title-box h3 a {
+  color: #ffffff;
+  transition: all 500ms ease;
+}
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {
+  margin: 0 -5px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 700px) {
+  .container {
+    width: 100%;
+  }
+
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 5px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.card .profile {
+  border-radius: 10px;
+  transition: 0.2s;
+}
+.card:hover .profile {
+  transform: scale(1.4);
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+}
+
+/* .card .content {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+} */
+.card .content .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #f1f1f1e6;
+  transition: 1s;
+
+  z-index: 1;
+  padding: 10px;
+}
+
+.from-left {
+  top: 0;
+  left: -100%;
+}
+.card:hover .content .from-left {
+  left: 0%;
+}
+
+.from-bottom {
+  top: 100%;
+  left: 0;
+}
+.card:hover .content .from-bottom {
+  top: 0%;
+}
+
+.from-right {
+  top: 0%;
+  right: -100%;
+}
+.card:hover .content .from-right {
+  right: 0;
+}
+
+.card .content .back h3 {
+  font-size: 15px;
+  letter-spacing: 2px;
+}
+.card .content .back .tem-img {
+  border-radius: 100%;
+}
+
+.card .content .back .des {
+  font-size: 13px;
+  padding: 20px 0px;
+}
+.card .content .back .social-icon {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+.card .content .back .social-icon li {
+  display: inline-block;
+}
+
+.card .content .back .social-icon li a {
+  display: block;
+  background: #333;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 100%;
+}

@@ -1,7 +1,6 @@
 .single-service-area {
   position: relative;
   display: block;
-  padding: 100px 0 70px;
   font-family: "Raleway", sans-serif;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {

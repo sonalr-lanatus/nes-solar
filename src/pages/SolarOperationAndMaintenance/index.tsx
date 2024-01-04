@@ -14,7 +14,7 @@ export default function SolarOperationAndMaintenance() {
         title="Solar Operations And Maintenance"
         imgSrc={"../assets/Our+Approach.jpg"}
       />
-      <section className="single-service-area">
+      <section className="single-service-area py-10 sm:py-20  md:py-32 2xl:py-56 px-8">
         <div className="container">
           <div className="row">
             <div className=" xl:basis-4/6 xl:grow-0 xl:shrink-0 lg:basis-full md:basis-full sm:basis-full">

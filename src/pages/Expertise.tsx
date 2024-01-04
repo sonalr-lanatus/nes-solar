@@ -109,7 +109,7 @@ export default function Expertise() {
           </li>
         </ul>
       </section> */}
-      <section className="card-area relative py-20 px-8">
+      <section className="card-area relative py-32  sm:py-20  md:py-32 2xl:py-56 px-8">
         <section className="card-section">
           <div className="card">
             <div className="flip-card">

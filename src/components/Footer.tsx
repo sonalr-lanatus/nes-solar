@@ -254,7 +254,7 @@ export default function Footer() {
                   <li>
                     <a
                       className="font-white transition hover:text-gray-700/75"
-                      href="/"
+                      href="/Projects"
                     >
                       Projects
                     </a>

@@ -161,7 +161,7 @@ export default function Awards() {
                 <div className="img-holder">
                   <img
                     src="../assets/Awards/innovative-business-award-57920220913.jpg"
-                    alt="Awesome Image"
+                    alt="Awards"
                   />
                   <div className="overlay-content">
                     <div className="inner-content">

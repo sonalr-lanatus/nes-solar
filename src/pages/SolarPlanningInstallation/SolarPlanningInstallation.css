@@ -203,7 +203,8 @@ h6 {
   position: relative;
   display: block;
   padding-bottom: 15px;
-  text-align: -webkit-center;
+  text-align: justify;
+  padding-left: 20px;
 }
 /* .sidebar-contact-box .inner-content h3 {
   color: #002f63;
@@ -370,7 +371,7 @@ a:focus {
   position: absolute;
   background-color: #038;
   color: #fff;
-  opacity: 0.5;
+  opacity: 0.9;
 
   border-radius: 200px 200px 151px 0px;
   -webkit-border-radius: 200px 200px 151px 0px;
@@ -378,7 +379,7 @@ a:focus {
 }
 
 .content {
-  margin: 20px 50px;
+  margin: 20px 15px;
 }
 
 /* h2 {
@@ -424,10 +425,6 @@ button:hover {
   background: linear-gradient(to right, #0062a3, #29abe2);
 }
 
-/* .Circle:nth-child(2) {
-  background: linear-gradient(to right, #f15, #f15a2a);
-  transform: translate(15rem, -9rem);
-} */
 .text-front {
   color: white;
   font-size: 30px;
@@ -453,10 +450,13 @@ button:hover {
 
 .upk-featured-list-item {
   position: relative;
+  display: -webkit-inline-box;
+  width: 100%;
 }
 
 .upk-featured-list-item-box {
   width: 100%;
+  text-align: center;
 }
 
 .upk-featured-image-wrap {
@@ -503,7 +503,7 @@ button:hover {
 }
 
 .upk-featured-list-title {
-  margin: 0;
+  margin: auto;
   font-size: 16px;
   font-weight: 600;
   line-height: 1.4;
@@ -599,16 +599,6 @@ button:hover {
   background: linear-gradient(0deg, #2b2d42 0, rgba(141, 153, 174, 0.1) 100%);
   transition: background 0.3s ease;
 }
-/* 
-.upk-featured-list-item:nth-child(1) .upk-featured-list-content {
-  position: absolute;
-  bottom: 0;
-  padding-bottom: 20px;
-} */
-
-/* .upk-featured-list-item:nth-child(1) .upk-featured-list-title a {
-  color: #fff;
-} */
 
 .upk-featured-list-item:nth-child(1) .upk-featured-list-title a:hover {
   color: #002f63;
@@ -621,14 +611,6 @@ button:hover {
 .upk-featured-list-item:nth-child(1) .upk-featured-meta {
   color: #edf2f4;
 }
-
-/* .upk-featured-list-item:nth-child(2) .upk-featured-list-content {
-  padding-top: 20px;
-}
-
-.upk-featured-list-item:nth-last-child(1) .upk-featured-list-content {
-  padding-bottom: 20px;
-} */
 
 .upk-global-link-yes .upk-featured-list-item:hover {
   cursor: pointer;
@@ -673,4 +655,100 @@ button:hover {
   .upk-featured-list-item:nth-last-child(1) .upk-featured-list-content {
     padding-bottom: 30px;
   } */
+}
+
+.card-header-two {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  place-items: center;
+  background: linear-gradient(
+    to bottom left,
+    rgb(32, 50, 96),
+    rgba(80, 166, 253, 1)
+  );
+  background: linear-gradient(
+    to bottom left,
+    rgb(32, 50, 96),
+    rgba(80, 166, 253, 1)
+  );
+  padding: 0.5rem;
+}
+.icon {
+  position: relative;
+  text-align: center;
+  width: 0px;
+  height: 0px;
+  padding: 12px;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  -moz-border-radius: 20px 20px 20px 20px;
+  -webkit-border-radius: 20px 20px 20px 20px;
+  -khtml-border-radius: 20px 20px 20px 20px;
+  color: #0c0c0c;
+}
+.icon svg {
+  font-size: 20px;
+  position: absolute;
+  left: 3px;
+  top: 3px;
+}
+.icon.social {
+  float: left;
+  margin: 0 5px 0 0;
+  cursor: pointer;
+  background: #ffffff;
+  color: #262626;
+  transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+.icon.social:hover {
+  background: #262626;
+  color: #6d6e71;
+  transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  -webkit-filter: drop-shadow(0 1px 10px rgba(0, 0, 0, 0.8));
+  -moz-filter: drop-shadow(0 1px 10px rgba(0, 0, 0, 0.8));
+  -ms-filter: drop-shadow(0 1px 10px rgba(0, 0, 0, 0.8));
+  -o-filter: drop-shadow(0 1px 10px rgba(0, 0, 0, 0.8));
+  filter: drop-shadow(0 1px 10px rgba(0, 0, 0, 0.8));
+}
+.icon.social.fb svg {
+  left: 2px;
+  top: 2px;
+}
+.icon.social.tw svg {
+  left: 11px;
+}
+.icon.social.in svg {
+  left: 11px;
+}
+.btn {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 240px;
+  height: 40px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  word-spacing: 2px;
+  border: 2.4px solid #fff;
+  border-radius: 50px;
+  font-size: 1rem;
+}
+#tsparticles {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left: 0;
 }

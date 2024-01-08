@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Header from "../../components/Header";
 import HeroImageSection from "../../components/common/HeroImageSection";
 import Footer from "../../components/Footer";
@@ -118,14 +118,11 @@ export default function SolarPlanningInstallation() {
 
                     {/* <h3>Consult with expert &amp; Start today</h3> */}
                     <div className="bottom-content">
-                      {/* <div className="icon-holder">
-                        <img
-                          src="../assets/Expertice/message.png"
-                          alt="Awesome Image"
-                          className="w-2/5"
-                        />
-                        <span className="icon-question-2"></span>
-                      </div> */}
+                      <div className="icon-holder">
+                        <h1 className="text-2xl after:border-b-2 after:border-b-[#3b8ce9] after:border-solid after:w-36 after:absolute after:bottom-7 after:ml-3">
+                          Our Services
+                        </h1>
+                      </div>
                       <div className="upk-container">
                         <div className="upk-featured-list">
                           <div className="upk-featured-list-item">
@@ -175,8 +172,12 @@ export default function SolarPlanningInstallation() {
                                     />
                                   </a>
                                 </div>
-                                <div>
-                                  <h4 className="upk-featured-list-title mr-2">
+                                <div
+                                  style={{
+                                    width: "100%",
+                                  }}
+                                >
+                                  <h4 className="upk-featured-list-title">
                                     <a
                                       className="title-animation-underline"
                                       href="#"
@@ -221,8 +222,92 @@ export default function SolarPlanningInstallation() {
                           </div>
                         </div>
                       </div>
+                      <button className="btn btn-primary">
+                        <a
+                          className=" wow slideInUp animated animated"
+                          data-wow-delay="0ms"
+                          data-wow-duration="1500ms"
+                          href="/Contact"
+                          style={{
+                            visibility: "visible",
+                            animationDuration: "1500ms",
+                          }}
+                        >
+                          <span className="btn-label">
+                            Schedule for Call
+                            <i
+                              className="fa fa-arrow-right"
+                              aria-hidden="true"
+                            ></i>
+                          </span>
+                        </a>
+                      </button>
+
                       <div className="bottom-box">
-                        <h2>
+                        <div className="card-header-two">
+                          {" "}
+                          <h5 className="font-white after:border-r-2 after:h-20  after:border-b-[#3b8ce9] after:border-solid  after:absolute after:-bottom-0 after:ml-14">
+                            Contact Us
+                          </h5>
+                          <ul className=" space-y-1 text-sm w-3/6">
+                            <li>
+                              <a
+                                className="flex items-start justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
+                                href="mailto:sales@nessolar.in"
+                              >
+                                <div className="icon social fb">
+                                  <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    className="h-5 w-5 shrink-0 font-black"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                  >
+                                    <path
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                      d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                                    />
+                                  </svg>
+                                </div>
+                                <p className="flex-1 font-white text-sm">
+                                  sales@nessolar.in
+                                </p>
+                              </a>
+                            </li>
+
+                            <li>
+                              <a
+                                className="flex items-start justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
+                                href="tel:9825071551"
+                              >
+                                <div className="icon social fb">
+                                  <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    className="h-5 w-5 shrink-0 font-black"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                  >
+                                    <path
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                      d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                                    />
+                                  </svg>
+                                </div>
+
+                                <p className="flex-1 font-white text-sm">
+                                  +91 9825071551
+                                </p>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+
+                        {/* <h2>
                           <a
                             href="tel:9825071551"
                             target="_blank"
@@ -239,27 +324,7 @@ export default function SolarPlanningInstallation() {
                           >
                             sales@nessolar.in
                           </a>
-                        </span>
-                      </div>
-                      <div className="button">
-                        <a
-                          className="btn-three wow slideInUp animated animated"
-                          data-wow-delay="0ms"
-                          data-wow-duration="1500ms"
-                          href="https://nessolar.in/contact-us"
-                          style={{
-                            visibility: "visible",
-                            animationDuration: "1500ms",
-                          }}
-                        >
-                          Schedule for Call
-                          <span className="icon-null">
-                            <i
-                              className="fa fa-arrow-right text-sm"
-                              aria-hidden="true"
-                            ></i>
-                          </span>
-                        </a>
+                        </span> */}
                       </div>
                     </div>
                   </div>
